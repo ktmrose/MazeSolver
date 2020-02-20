@@ -1,6 +1,29 @@
 # MazeSolver
 Solves mazes using breadth-first-search traversal, if a solution exists.  Takes in a maze as a .txt file (see example maze folder for format) and generates a new .txt file with the shortest path indicated with "." if it exists. If the maze is unsolvable, the solution text file will look identical to the input maze file.
 
+The first line of the .txt file should have the number of rows and the number of columns, seperated by a space.
+Walls are marked with "X", the start is marked with "S", and the end is marked with "G".  An example is shown below:
+
+7 9
+XXXXXXXXX
+X       X
+XXXX XX X
+X       X
+X XX XX X
+XGX   S X
+XXXXXXXXX
+
+When in the proper format, program will output a similar looking text file with the word "Solution" appended to the input file name with the shorest path as shown below:
+
+7 9
+XXXXXXXXX
+X       X
+XXXX XX X
+X....   X
+X.XX.XX X
+XGX ..S X
+XXXXXXXXX
+
 # Background
 This was a term project completed after a rigorous 5-week Data Structures and Algorithms course and with only about 3 months of total coding experience and no more than 2 months of experience working with Java.
 
